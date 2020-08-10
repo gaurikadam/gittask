@@ -1,0 +1,53 @@
+
+1- configure your new username and email with
+change username: git config username.user <username>
+change email: git config username.email <email>
+2- run this command git commit --amend -C HEAD --reset-author
+3- run this command git push –force
+
+1)	git –version
+2)	git –help
+2)Adding files to git 
+2-Move to local folder and type 
+3)	git init (initialized git)
+
+4)	git status 
+
+5)	git add -A(all files to staging area)    
+
+6)	git add <filename> (adding a single file)
+
+7)	git reset (remove all files from staging area)
+
+8)	git reset <filename>(reset the mentioned file)
+
+9)	git status (modification)
+
+10)	git log (author details)
+
+11)	git commit -m "Initial commit" (commit files)
+
+12)	git clone <url>  (download the code from git) 
+
+13)	git remote add origin https://github.com/user/repo.git (pushing the code remote this is for creating remote to this repo )
+
+14)	git remote remove origin (to remove remote)
+
+15)	git push -u origin master 
+
+3- Branching  and merging in git 
+Used to save code temporary in the branch after making changes we can merge the branch with master.3 way merge is also possible 
+ git branch <branch-name> (create branch)
+git branch (list branch names)
+git checkout <branch-name> (move to the branch)
+git merge < branch-name > (merge the branch) 
+
+git push origin master (pushing the branch)
+
+git branch -D < branch-name > (delete branch from local directory)
+git branch -a (check branch in repo)
+git push origin --delete < branch-name > (delete branch from repo)
+
+4-Rebase 
+go to branch 
+1)	git rebase master 
